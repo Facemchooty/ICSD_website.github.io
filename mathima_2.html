@@ -1,0 +1,168 @@
+<!-- Φώτιος Κατσίφας: ΑΜ3212020089
+Ζαχαρίας Νικόλαος Χρήστος: ΑΜ3212020062-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.-half img:hover{opacity:1}
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="-sidebar -red -collapse -top -large -padding" style="z-index:3;width:300px;font-weight:bold;" id="Sidebar"><br>
+  <a href="javascript:void(0)" onclick="_close()" class="-button -hide-large -display-topleft -red -hover-red" style="width:100%;font-size:15px">Απόκριψη μπάρας</a>
+  <div class="-container">
+	
+	<a href="./index.html"><img src="./images/logo_bb.png" alt="Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων" ></a>
+  </div>
+  <div class="-bar-block">
+    <a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> 
+  <a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a>
+   <nav>
+
+<label for="touch" style="width:100%;"><div class=box > <a onclick="_close()" class="-bar-item -button -hover-white -red" style="width:100%;font-size:15px;text-align:left;">Σπουδές</a> </div> </label>               
+  <input type="checkbox" id="touch"> 
+
+  <ul class="slide ">
+    <li><a href="./lessons.html#Y1" class="-hover-white -red">Πρώτο Έτος</a></li> 
+    <li><a href="./lessons.html#Y2" class="-hover-white -red">Δεύτερο Έτος</a></li>
+    <li><a href="./lessons.html#Y3" class="-hover-white -red">Τρίτο Έτος</a></li>
+    <li><a href="./lessons.html#Y4" class="-hover-white -red">Τέταρτο Έτος</a></li>
+    <li><a href="./lessons.html#Y5" class="-hover-white -red">Πέμπτο Έτος</a></li>
+  </ul>
+
+</nav> 
+  </div>
+  
+  <!---->
+
+
+  <!---->
+  
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="-container -top -hide-large -red -xlarge -padding">
+  <a href="javascript:void(0)" class="-button -red -hover-red -margin-right" onclick="_open()">☰</a>
+
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="-overlay -hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="-container" style="margin-top:80px" id="showcase">
+    <h1 class=""><b>Εισαγωγή στην Επιστήμη των Υπολογιστών & Επικοινωνιών</b></h1>
+	<hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    
+    <hr style="width:50px;border:5px solid blue" class="-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+ <style>
+  table {
+    width: 50%;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+</style>
+
+
+<table>
+  <tr>
+    <th>Τίτλος Μαθήματος</th>
+    <th>Εισαγωγή στην Επιστήμη των Υπολογιστών & Επικοινωνιών</th>
+  </tr>
+  <tr>
+    <td>Κωδικός Μαθήματος</td>
+    <td>321-1407</td>
+  </tr>
+  <tr>
+    <td>Εξάμηνο</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>ECTS</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Ώρες (Θεωρία)</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>Ώρες (Εργαστηρίο)</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Διδάσκοντας</td>
+    <td>Πάτρικ Μπέιτμαν</td>
+  </tr>
+</table>
+<br>
+<div>
+  <h3>Ύλη μαθήματος</h3>
+  <b>Οι γνώσεις και οι δεξιότητες του Μηχανικού Π.Ε.Σ.. Σύγχρονες τεχνολογίες πληροφορικής και επικοινωνιών και προοπτικές για το μέλλον. Εννοιολογικό πλαίσιο – Δεδομένα, πληροφορία, Πληροφοριακό Σύστημα. Εισαγωγή στους υπολογιστές. Οργάνωση υπολογιστών. Αρχιτεκτονική υπολογιστών. Δίκτυα υπολογιστών. Τεχνολογία λογισμικού. Σχεδιασμός ιστοχώρων. Ηλεκτρονικό εμπόριο – Ηλεκτρονική διακυβέρνηση. Πληροφοριακά Συστήματα Διοίκησης. Ασφάλεια Πληροφοριακών Συστημάτων και Ιδιωτικότητα. Εισαγωγή στην επιστημολογία.
+  </b>
+<br>
+<br>
+<div>
+  <h3>Επιδιωκόμενα μαθησιακά αποτελέσματα</h3>
+  <b>Mετά την ολοκλήρωση τη μαθησιακής διαδικασίας οι φοιτητές και φοιτήτριες:
+
+θα έχουν κατανοήσει με πληρότητα τις βασικές έννοιες των κύριων ενοτήτων της επιστήμης των υπολογιστών και των επικοινωνιών
+θα έχουν αποκτήσει δεξιότητες εκπόνησης ομαδικής εργασίας, παρουσίασης των αποτελεσμάτων της και ανάπτυξης ιστοσελίδας.
+  </b>
+</div>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function _open() {
+  document.getElementById("Sidebar").style.display = "block";
+  document.getElementById("Overlay").style.display = "block";
+}
+ 
+function _close() {
+  document.getElementById("Sidebar").style.display = "none";
+  document.getElementById("Overlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!-- Φώτιος Κατσίφας: ΑΜ3212020089
+Ζαχαρίας Νικόλαος Χρήστος: ΑΜ3212020062-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.-half img:hover{opacity:1}
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="-sidebar -red -collapse -top -large -padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="_close()" class="-button -hide-large -display-topleft -hover-red -red" style="width:100%;font-size:15px">Απόκριψη μπάρας</a>
+  <div class="-container">
+	
+	<a href="./index.html"><img src="./images/logo_bb.png" alt="Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων" ></a>
+  </div>
+  <div class="-bar-block">
+    <div class=box><a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> </div>
+    <a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a> 
+    <a href="./lessons.html" onclick="_close()" class="-bar-item -button -hover-white">Σπουδές</a> 
+    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="-container -top -hide-large -red -xlarge -padding">
+  <a href="javascript:void(0)" class="-button -red -margin-right -red -hover-red" onclick="_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="-overlay -hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="-container" style="margin-top:80px" id="personal">
+    <h1><b>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</b></h1>
+    <hr style="width:50px;border:5px solid red" class="-round">
+  </div>
+	
+	<div class="container-up">
+      <div class="image">
+        <img src="./images/Gandal-kosmitoras.jpg">
+      </div>
+      <div class="text">
+	<h4 class="-padding-64"><p>Καλωσορίσατε στο Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων του Πανεπιστημίου Αιγαίου.<br><br>Όλοι εμείς που υπηρετούμε αυτή τη Σχολή, έχουμε συναίσθηση της μακράς παράδοσης των 26 χρόνων προσφοράς της στη θετική επιστήμη,
+	στους θεσμούς, στην ελληνική κοινωνία και στη χώρα. Στόχος μας είναι να συνεχίσουμε το πολυσχιδές έργο της, βελτιώνοντας διαρκώς τις επιδόσεις της και επιβεβαιώνοντας στην πράξη τις πολύ θετικές αξιολογήσεις που λαμβάνουμε
+	τόσο από τα αρμόδια όργανα όσο και από την κοινωνία.<br><br> Στο πλαίσιο αυτό, δεν ξεχνάμε πως κύριοι αποδέκτες των προσπαθειών μας είναι οι ίδιοι οι φοιτητές μας. Αυτούς έχουμε στο επίκεντρο της δουλειάς μας και χάριν αυτών πρωτίστως
+	εργαζόμαστε. Γνωρίζουμε πως μια καλή Σχολή είναι συνάρτηση τριών παραγόντων: των καλών φοιτητών, των καλών καθηγητών κι ενός καλού προγράμματος σπουδών.<br><br> Φιλοδοξία μας είναι να κάνουμε τη Σχολή μας έναν τόπο δημιουργίας, 
+	στον οποίο θα χαίρεσαι να ζεις. Δεν υπάρχει καμιά δικαιολογία μια Σχολή με τους κατά τεκμήριο ικανότερους νέους τής σειράς τους και μερικούς από τους αξιότερους επιστήμονες του κλάδου τους, να μην είναι το 
+	πιο ευχάριστο μέρος για να εκπαιδεύσει, να εκπαιδευτεί και να δημιουργήσει κανείς. Για να ζήσει μερικά από τα καλύτερα χρόνια της ζωής του.<br><br> Είναι αλήθεια πως δεν ζούμε σε εύκολους καιρούς. 
+	Όπως αλήθεια είναι και πως δεν στερούμεθα μέσων, ούτε γνώσης για ν’ αντιμετωπίσουμε τις μεγάλες προκλήσεις της εποχής μας. Μια εποχή που δοκιμάζεται από τη διεθνοποίηση της κοινωνικής, οικονομικής, επαγγελματικής 
+	και επιστημονικής πραγματικότητας. Η διεθνοποίηση αυτή είναι η κινητήριος δύναμη της εξέλιξης και της θετικής επιστήμης που θεραπεύουμε. Η Σχολή μας, όχι τυχαία, είναι πόλος έλξης των Ευρωπαίων φοιτητών, που την επιλέγουν 
+	μαζικά για να ζήσουν στη χώρα μας την ερασμιακή τους εμπειρία.<br> 
+	<br>Η εποχή μας δοκιμάζεται και από την καλπάζουσα ψηφιοποίηση των δραστηριοτήτων μας. Είναι ένα ακόμη στοίχημα που θα κερδίσουμε με την πολύτιμη συνδρομή του διοικητικού μας προσωπικού, 
+	το οποίο σηκώνει μεγάλο βάρος από τη λειτουργία της Σχολής και μας συγκινεί με την αθόρυβη προσφορά του. 
+	<br><br>Ο Κοσμήτορας
+Γκάνταλφ ο Λευκός<br>
+Καθηγητής Νομικού Πλαισίου Κοινωνίας της Πληροφορίας</p></h4>
+  </div>
+  </div>
+  
+
+  <!-- Services -->
+  
+  <div class="-container" id="studies" style="margin-top:75px">
+    <h1><b>Νεά του Τμήματος</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+	<div>
+		<div class="-center btn-group" style="display: flex; justify-content: center; align-items: center;">
+			<button class="-button -red " style="display:inline-block;border: 2px solid black;"><a href='information.html'>Πληροφορίες Τμήματο</a></button>
+			<br><br>
+			<button class="-button -red" style="display:inline-block;border: 2px solid black;" onclick="window.open('announcements.html')">Ανακοινώσεις</button>
+		</div>
+	<section class="section section--background section--news mt-5 mb-5">
+      <div class="container">
+        <div class="row">
+    
+          <!-- Επικαιρότητα Section -->
+          <div class="col-lg-6 col-12">
+            <h2 class="h1 mt-xl-n1 mb-4 mb-md-5 pb-2">Επικαιρότητα</h2>
+    
+            <div class="box-news">
+              <a aria-label="Missing professor" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img alt="Αγνωούμενος καθηγητής, αν τον δείτε επικοινωνήστε με την γραμματεία" class="img-fluid" src="./images/sauron-eye.jpg">
+                  </div>
+                  <div class="col-lg-9 col-8">
+                    <h2>Αγνωούμενος καθηγητής, αν τον δείτε επικοινωνήστε με την γραμματεία</h2>
+                    <p>Μάρτιος 24, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="box-news">
+              <a aria-label="Condolences towards Boromirs' family" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img alt="Professor passes away" class="img-fluid" src="./images/boromir.webp">
+                  </div>
+                  <div class="col-lg-9 col-8">
+                    <h2>Με λύπη ανακοινώνουμε τον θάνατο του καθηγητή Μπόρομιρ</h2>
+                    <p>Μάρτιος 6, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="box-news">
+              <a aria-label="Θέση εργασίας στην OHB Hellas" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img alt="Θέση εργασίας στην OHB Hellas" class="img-fluid" src="./images/ohb-hellas.jpg">
+                  </div>
+                  <div class="col-lg-9 col-8">
+                    <h2>Θέση εργασίας Τηλεπικοινωνιακού Μηχανικού στην OHB Hellas</h2>
+                    <p>Φεβρουάριος 20, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="col-lg-9 offset-lg-3 col-md-8 offset-md-4 col-7 offset-4">
+              <a href="#" class="view">Δείτε όλα</a>
+            </div>
+          </div>
+    
+          <!-- End of Επικαιρότητα Section -->
+    
+          <!-- Σημαντικές Διακρίσεις Section -->
+          <div class="col-lg-6 col-12 pr-xl-0 mt-5 mt-lg-0">
+            <h2 class="h1 mt-xl-n1 mb-4 mb-md-5 pb-2">Σημαντικές Διακρίσεις</h2>
+    
+            <div class="box-news box-news--alerts">
+              <a aria-label="Hackathon 2023 στην Μόρντορ" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img src="./images/fellowship.jpg" class="img-fluid" alt="Hackathon 2023 στην Μόρντορ">
+                  </div>
+                  <div class="col-lg-9 col-8 pl-xl-4 pr-xl-0">
+                    <h2>Φοιτητές του Τμήματος Μηχανικών ΠΕΣ στο Hackathon 2023 στην Μόρντορ</h2>
+                    <p>Μάρτιος 20, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="box-news box-news--alerts">
+              <a aria-label="Ανάδειξη καθηγητών τμήματος" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img src="./images/bateman-yoda.jpg" class="img-fluid" alt="Ανάδειξη καθηγητών τμήματος">
+                  </div>
+                  <div class="col-lg-9 col-8 pl-xl-4 pr-xl-0">
+                    <h2>Δύο Καθηγητές του Τμήματος στους κορυφαίους στον κόσμο στους τομείς τους, ανάμεσα σε περισσότερους από 10.000 ακαδημαϊκούς και συγγραφείς</h2>
+                    <p>Μάρτιος 18, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="Διάκριση φοιτητή">
+              <a aria-label="Lunar XPlorer transportation Delays" href="#">
+                <div class="row">
+                  <div class="col-lg-3 col-4 pr-1">
+                    <img src="./images/Pippin.webp" class="img-fluid" alt="Διάκριση φοιτητή στο Run from The Farmer 2023">
+                  </div>
+                  <div class="col-lg-9 col-8 pl-xl-4 pr-xl-0">
+                    <h2>Μεγάλη επιτυχία φοιτητή του τμήματος στο διεθνές πρωτάθλημα Run from The Farmer 2023</h2>
+                    <p>Φεβρουάριος 20, 2023</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="col-lg-10 offset-lg-2 col-md-8 offset-md-4 col-7 offset-4">
+              <a href="#" class="view">Δείτε όλα</a>
+            </div>
+          </div>
+          <!-- End of Alerts Section -->
+        </div>
+      </div>
+    </section>
+
+     
+	</div>
+
+	
+   
+  
+  <!-- Contact -->
+  <div class="-container" id="contact" style="margin-top:75px">
+    <h1><b>Στοιχεία επικοινωνίας.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="-round">
+    <p> Μπορείται να επικοινωνήσεται μαζί μας μέσω:<br>
+		dicsd [at] aegean [dot] gr<br>
+		+30 22730 82200<br>
+		Κτήριο Λυμπέρη, Παλαμά 2 & Γοργύρας, Τ.Κ. 83200<br>
+		Ωράριο Λειτουργίας: Δευτέρα - Παρασκευή: 8:00 - 16:00<br><br>
+		Ή μέσω της φόρμας μπορείται να μας στείλεται ένα e-mail
+</p>
+    <form action="#" target="_blank">
+      <div class="-section">
+        <label>Ονοματεπώνυμο</label>
+        <input class="-input -border" type="text" name="Name" requiblue>
+      </div>
+      <div class="-section">
+        <label>E-mail</label>
+        <input class="-input -border" type="text" name="Email" requiblue>
+      </div>
+      <div class="-section">
+        <label>Μήνυμα</label>
+        <input class="-input -border" type="text" name="Message" requiblue>
+      </div>
+      <button type="submit" class="-button -block -padding-large -blue -margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+<div class="-light-grey -container -padding-32" style="margin-top:75px;padding-right:58px"><p class="-right">Poweblue by <a href="https://www.schools.com/css/default.asp" title="W3.CSS" target="_blank" class="-hover-opacity">.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function _open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function _close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

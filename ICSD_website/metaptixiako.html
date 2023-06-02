@@ -1,0 +1,128 @@
+<!-- Φώτιος Κατσίφας: ΑΜ3212020089
+Ζαχαρίας Νικόλαος Χρήστος: ΑΜ3212020062-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.-half img:hover{opacity:1}
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="-sidebar -red -collapse -top -large -padding" style="z-index:3;width:300px;font-weight:bold;" id="Sidebar"><br>
+  <a href="javascript:void(0)" onclick="_close()" class="-button -hide-large -display-topleft -red -hover-red" style="width:100%;font-size:15px">Απόκριψη μπάρας</a>
+  <div class="-container">
+  
+  <a href="./index.html"><img src="./images/logo_bb.png" alt="Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων" ></a>
+  </div>
+  <div class="-bar-block">
+    <a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> 
+    <a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a> 
+    <a href="./lessons.html" onclick="_close()" class="-bar-item -button -hover-white">Σπουδές</a> 
+    <div class=box><a href="./metaptixiako.html" onclick="_close()" class="-bar-item -button -hover-white">Μεταπτυχιακό</a></div> 
+    <a href="./didaktoriko.html" onclick="_close()" class="-bar-item -button -hover-white">Διδακτορικό</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="-container -top -hide-large -red -xlarge -padding">
+  <a href="javascript:void(0)" class="-button -red -hover-red -margin-right" onclick="_open()">☰</a>
+  
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="-overlay -hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="Overlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="-container" style="margin-top:80px" id="showcase">
+    <h1 ><b>Μεταπτυχιακές Σπουδές</b></h1>
+  <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+        <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+
+  <div class="box3">
+                        <div >
+                            <p >Στο Πανεπιστήμιο Αιγαίου λειτουργούν 43 <a href="https://www.aegean.gr/μεταπτυχιακές-σπουδές" target="_blank">Προγράμματα Μεταπτυχιακών Σπουδών</a> εκ των οποίων 4 είναι διατμηματικά ή δι-ιδρυματικά. 
+                                <br><br>Από το Ακαδημαϊκό έτος 2018-19, το <b>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</b>  οργανώνει και λειτουργεί 5 σύγχρονα προγράμματα μεταπτυχιακών σπουδών 
+                                στο αντικείμενο των Πληροφοριακών και Επικοινωνιακών Συστημάτων.
+                            </p>
+                            <ol>
+                                <li>
+                                    <p c>
+                                        <a href="http://msc.icsd.aegean.gr/security/" target="_blank">Ασφάλεια Πληροφοριακών και Επικοινωνιακών Συστημάτων</a>: Κατάρτιση και εκπαίδευση επιστημόνων, ερευνητών/τριών και στελεχών δημοσίων ή ιδιωτικών οργανισμών
+                                        και μηχανισμών λήψης αποφάσεων ή διοίκησης στο χώρο της Ασφάλειας Πληροφοριακών και Επικοινωνιακών Συστημάτων και των Τεχνολογιών Προστασίας της Ιδιωτικότητας.
+                                    </p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p >
+                                        <a href="http://msc.icsd.aegean.gr/iot/" target="_blank">Διαδίκτυο των Πραγμάτων: Ευφυή Περιβάλλοντα σε Δίκτυα Νέας Γενιάς</a>: Συστηματική εκπαίδευση σε εξειδικευμένα θέματα σχεδίασης και ανάπτυξης ευφυών περιβαλλόντων σε δίκτυα νέας γενιάς, έχοντας ως σημείο αναφοράς 
+                                        το Διαδίκτυο των Πραγμάτων.
+                                    </p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p >
+                                        <a href="http://msc.icsd.aegean.gr/egov/" target="_blank">Ηλεκτρονική Διακυβέρνηση</a>: Παροχή υψηλού επιπέδου γνώσεων και ικανοτήτων στον κρίσιμο χώρο της ηλεκτρονικής διακυβέρνησης, σχετικά με μία πληθώρα μορφών Πληροφοριακών Συστημάτων που μπορούν να αναπτυχθούν στους φορείς 
+                                        του δημόσιου τομέα (π.χ., πληροφοριακά συστήματα εσωτερικής υποστήριξης, παροχής ηλεκτρονικής πληροφόρησης στους πολίτες, ηλεκτρονικών συναλλαγών πολιτών με το κράτος, ηλεκτρονικής δημοκρατίας, συμμετοχής και διαβούλευσης, αξιοποίησης κοινωνικών δικτύων, ανοικτών κυβερνητικών δεδομένων, διαλειτουργικότητα, κ.ά.).
+                                    </p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p >
+                                        <a href="http://msc.icsd.aegean.gr/ics-conversion/" target="_blank">Πληροφοριακά και Επικοινωνιακά Συστήματα</a>: Ανάπτυξη γνωστικού υπόβαθρου στον τομέα των Πληροφοριακών Συστημάτων (Π.Σ.) σε φοιτητές και φοιτήτριες που δεν έχουν επαρκείς ακαδημαϊκές γνώσεις Πληροφορικής. Ο κύριος σκοπός του προγράμματος είναι η μύηση των αποφοίτων Πανεπιστημίων 
+                                        και ΤΕΙ, τεχνολογικών ή μη ειδικοτήτων, στα σύγχρονα θέματα των Π.Σ., μέσω της εξοικείωσης στις αρχές που διέπουν την ανάλυση, σχεδιασμό, υλοποίηση και διοίκηση ενός Π.Σ. υψηλών προδιαγραφών και απαιτήσεων.
+                                    </p>
+                                </li>
+                                <br>
+                                <li>
+                                    <p >
+                                        <a href="http://msc.icsd.aegean.gr/innovation/" target="_blank">Ψηφιακή Καινοτομία και Νεοφυής Επιχειρηματικότητα</a> (Διιδρυματικό ΠΜΣ σε συνεργασία με τη Σχολή Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου): Παροχή εξειδικευμένων γνώσεων στην επιστήμη της Διοίκησης Νεοφυών Επιχειρήσεων μέσω της προσέγγισης 
+                                        των θεωρητικών και πρακτικών ζητημάτων του σύγχρονου Ηλεκτρονικού Επιχειρείν: τεχνικές και στρατηγικές του ψηφιακού μάρκετινγκ, επιχειρηματικά μοντέλα, ο ρόλος των πληροφοριακών συστημάτων στο σύγχρονο οργανισμό, ψηφιακά startups και ψηφιακές υπηρεσίες.
+                                    </p>
+                                </li>
+                            </ol>
+                            <p >
+                                Η διάρκεια σπουδών ορίζεται σε 3 ή 4 διδακτικά εξάμηνα και υλοποιείται σε περιβάλλον μικτής διδασκαλίας 
+                                μάθησης με πρότυπες συνδυαστικές μορφές που περιλαμβάνουν:
+                            </p>
+                            <ul>
+                                <li>έναν ολιγοήμερο κύκλο εντατικής διδασκαλίας ανά εξάμηνο</li>
+                                <li>ηλεκτρονικές διαδικασίες μάθησης.</li>
+                            </ul>
+                            <br>
+                            <p > 
+                                Συνολικά, τα προγράμματα που προσφέρονται έχουν ως κεντρικό στόχο τη δημιουργία επιστημόνων και στελεχών με υψηλού επιπέδου εκπαίδευση, δημιουργικό και κριτικό πνεύμα, ικανών να αναλύουν τα προβλήματα και να αξιοποιούν τις σύγχρονες Τεχνολογίες Πληροφορικής και Επικοινωνιών για το σχεδιασμό, την ανάπτυξη και τη διοίκηση πληροφοριακών και επικοινωνιακών συστημάτων, σε περιβάλλον σύγκλισης επιστήμης, τεχνολογίας, καινοτομίας και επιχειρηματικότητας.
+                                <br><br>
+                                Για  κάθε  συμπληρωματική  πληροφορία, οι  ενδιαφερόμενοι  μπορούν  να συμβουλευτούν τον οδηγό σπουδών του Π.Μ.Σ. που βρίσκεται αναρτημένος στην ηλεκτρονική  διεύθυνση <a target="_blank" href="http://msc.icsd.aegean.gr/"> http://msc.icsd.aegean.gr/ </a> ή να  απευθυνθούν στη Γραμματεία  του Π.Μ.Σ. στο τηλέφωνο 2273082210.
+                            </p>
+                        </div>
+                    
+  </div>
+
+  </body>
+</html>

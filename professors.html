@@ -1,0 +1,231 @@
+<!-- Φώτιος Κατσίφας: ΑΜ3212020089
+Ζαχαρίας Νικόλαος Χρήστος: ΑΜ3212020062-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.-half img:hover{opacity:1}
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="-sidebar -red -collapse -top -large -padding" style="z-index:3;width:300px;font-weight:bold;" id="Sidebar"><br>
+  <a href="javascript:void(0)" onclick="_close()" class="-button -hide-large -display-topleft -red -hover-red" style="width:100%;font-size:15px">Απόκριψη μπάρας</a>
+  <div class="-container">
+	
+	<a href="./index.html"><img src="./images/logo_bb.png" alt="Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων" ></a>
+  </div>
+  <div class="-bar-block">
+    <a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> 
+    <div class=box><a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a></div> 
+    <a href="./lessons.html" onclick="_close()" class="-bar-item -button -hover-white">Σπουδές</a> 
+    
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="-container -top -hide-large -red -xlarge -padding">
+  <a href="javascript:void(0)" class="-button -red -hover-red -margin-right" onclick="_open()">☰</a>
+  
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="-overlay -hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="Overlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="-container" style="margin-top:80px" id="showcase">
+    <h1 class="-jumbo"><b>Εκπαιδευτικο Προσωπικο</b></h1>
+	<hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    <h1 class="-xxxlarge -text-blue"><b>Ακαδημαϊκο</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="-row-padding">
+    <div class="-half">
+      <img src="./images/gandalf.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Γκανδαλφ ο γκρι</h3> <p>Διδάκτορας </p> <br><p>Διδακτορικό Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών, ΕΜΠ.</p>
+<p>Δίπλωμα Ηλεκτρολόγου Μηχανικού, Τμήμα Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών, ΕΜΠ.</p>
+<p>Διατμηματικό Μεταπτυχιακό Πρόγραμμα «Τεχνο-Οικονομικά Συστήματα (ΜΒΑ)» του Πολυτεχνείου των ορυχείων της Μόρντορ.</p> <br><br> 
+<a href='gandalf.html'>περισότερες πλιροφορίες</a>">
+      <img src="./images/yoda.jpg" style="width:50%" onclick="onClick(this)" alt="<h3>Γιόντα</h3><p>Πρωην Τζεντάι Μάστερ νην Διδάκτορας </p><br><p>Μετα-διδακτορικό: 2009-2011, Υπότροφος ERCIM, CNR στην Πίζα Ιταλίας & FNR στο Λουξεμβούργο</p>
+<p>Μετα-διδακτορικό: 2008-2009, Τμήμα Ηλεκτρονικής, Πληροφορίας και Βιοτεχνολογίας, Πολυτεχνείο Μιλάνου, Ιταλία</p>
+<p>Διδακτορικό: 2008, Τμήμα Επιστήμης Υπολογιστών, Πανεπιστήμιο Κρήτης, Ελλάδα</p>
+<p>Μεταπτυχιακό: 2002, Τμήμα Επιστήμης Υπολογιστών, Πανεπιστήμιο Κορούσκο</p>
+<p>Πτυχίο: 2000, Τμήμα Επιστήμης Υπολογιστών, Ναός Τζεντάι</p>">
+      <img src="./images/bateman.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Πάτρικ Μπέιτμαν</h3> <b>Διδάκτορας </b><br><p>Δίπλωμα Ηλεκτρολόγου Μηχανικού και Μηχανικού Υπολογιστών, Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Εθνικό Μετσόβιο Πολυτεχνείο</p> 
+<p>Διδακτορικό Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Εθνικό Μετσόβιο Πολυτεχνείο 
+Certified Professional Coach & Mentor, Πανεπιστήμιο Αιγαίου 
+Educator, Berkeley Method of Entrepreneurship, UC Berkeley, US</p>">
+    </div>
+
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="-button -black -xxlarge -display-topright">×</span>
+    <div class="-modal-content -animate-zoom -center -transparent -padding-64">
+      <img id="img01" class="-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="-container" style="margin-top:80px" id="services">
+  <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    <h1 class="-xxxlarge -text-blue"><b>Λοιποί Διδάσκοντες</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="-row-padding">
+    <div class="-half">
+      <img src="./images/qui-gon.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Κουάιν-Κγον Τζινν</h3><p>Διδάκτορας<p><br><p>Μεταδιδακτορικός Ερευνητής (Post-Doctoral Associate Researcher:
+Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+Τμήμα Πληροφορικής & Τηλεπικοινωνιών
+Εργαστήριο Φωτονικής Τεχνολογίας & Οπτικών Επικοινωνιών.</p>
+
+<p>Μεταδιδακτορικός Ερευνητής (Marie Curie Research Fellow):
+III-V Labs - Thales - Alcatel
+Εργαστήριο GaAs - Design and Fabrication</p>
+
+<p>Διδακτορικό Δίπλωμα (Ph.D):
+Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+Τμήμα Πληροφορικής & Τηλεπικοινωνιών</p>
+
+<p>Μεταπτυχιακο Διπλωμα Εξειδίκευσης στη Μικροηλεκτρονικη (MSc.):
+Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+Τμήμα Πληροφορικής & Τηλεπικοινωνιών / τμήμα Φυσικής</p>
+
+<p>Πτυχιο (BS.):
+Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
+Τμήμα Πληροφορικής & Τηλεπικοινωνιών. Τομέας: Τηλεπικοινωνιών και Επεξεργασίας Σήματος.</p>">
+      <img src="./images/gimli.jpg" style="width:50%" onclick="onClick(this)" alt="<h3>Γκίμλη ο Νάνος</h3><p>Διδάκτορας</p><br><p>Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών και Τεχνολογίας Υπολογιστών, Πανεπιστήμιο Έρεμπορν (2005).</p>
+
+<p>Διδακτορικό, Τμήμα Ηλεκτρολόγων Μηχανικών και Τεχνολογίας Υπολογιστών, Πανεπιστήμιο Μίνας Τίριθ (2012).</p>">
+      <img src="./images/sauron.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Σάουρον</h3> <p>πρώην καθηγιτής</p> <br> <p>Δεν συνεργαζόμαστε πλέον με τον κύριο Σάουρον λόγο καλλιτεχνικών διαφωνιών</p>">
+    </div>
+
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="-button -black -xxlarge -display-topright">×</span>
+    <div class="-modal-content -animate-zoom -center -transparent -padding-64">
+      <img id="img01" class="-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- Designers -->
+  <div class="-container" style="margin-top:80px" id="designers">
+  <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    <h1 class="-xxxlarge -text-blue"><b>Εργαστηριακό</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="-row-padding">
+    <div class="-half">
+      <img src="./images/legolas.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Λέγολας</h3><p></p>Εργαστηριακός καθηγιτής<p><br>Δίπλωμα Μηχανικού Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πανεπιστήμιο Αιγαίου</p>
+
+<p>Μεταπτυχιακό, Προηγμένα Συστήματα Πληροφορικής, Πανεπιστήμιο Πειραιώς</p>">
+      <img src="./images/kenobi.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Όμπη-ουαν Κενόμπι</h3><p>Εργαστηριακός καθηγιτής</p><br><p>Δίπλωμα Μηχανικού Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>
+
+<p>Μεταπτυχιακό Δίπλωμα Ειδίκευσης στα Συστήματα Επεξεργασίας Σημάτων και Εικόνων, Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>
+</p>Διδακτορικό Δίπλωμα, Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>">
+      
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="-button -black -xxlarge -display-topright">×</span>
+    <div class="-modal-content -animate-zoom -center -transparent -padding-64">
+      <img id="img01" class="-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+  <!-- Packages / Pricing Tables -->
+  <div class="-container" style="margin-top:80px" id="Packages">
+  <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    <h1 class="-xxxlarge -text-blue"><b>Ερευνητικό</b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="-row-padding">
+    <div class="-half">
+      <img src="./images/bilbo.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Μπίλμπο Μπάγκινς</h3><p>Ερευνητής</p><br><p>Δίπλωμα (Integrated Master) Μηχανικού Πληροφοριακών και Επικοινωνιακών Συστημάτων, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πολυτεχνική Σχολή, Πανεπιστήμιο Αιγαίου</p>
+
+
+
+<p>Διαδίκτυο των Πραγμάτων:Ευφυή Περιβάλλοντα σε Δίκτυα Νέας Γενιάς, Πολυτεχνική Σχολή, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πανεπιστήμιο Αιγαίου</p>">
+      <img src="./images/jabba.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Τζάββα Δε Χάτ</h3><p>Ερευνητής</p><br><p>Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πολυτεχνική Σχολή, Πανεπιστήμιο Αιγαίου</p><p>Διαδίκτυο των Πραγμάτων Ευφυή συστήματα σε δίκτυα νέας γενιάς  Πανεπιστήμιο Αιγαίου, Τμήμα ΜΠΕΣ, Σάμος</p>">
+      
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="-button -black -xxlarge -display-topright">×</span>
+    <div class="-modal-content -animate-zoom -center -transparent -padding-64">
+      <img id="img01" class="-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+ 
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="-light-grey -container -padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+<script>
+// Script to open and close sidebar
+function _open() {
+  document.getElementById("Sidebar").style.display = "block";
+  document.getElementById("Overlay").style.display = "block";
+}
+ 
+function _close() {
+  document.getElementById("Sidebar").style.display = "none";
+  document.getElementById("Overlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

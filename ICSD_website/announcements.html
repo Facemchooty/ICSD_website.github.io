@@ -1,0 +1,143 @@
+<!-- Φώτιος Κατσίφας: ΑΜ3212020089
+Ζαχαρίας Νικόλαος Χρήστος: ΑΜ3212020062-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.-half img:hover{opacity:1}
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="-sidebar -red -collapse -top -large -padding" style="z-index:3;width:300px;font-weight:bold;" id="Sidebar"><br>
+  <a href="javascript:void(0)" onclick="_close()" class="-button -hide-large -display-topleft -red -hover-red" style="width:100%;font-size:15px">Απόκριψη μπάρας</a>
+  <div class="-container">
+  
+  <a href="./index.html"><img src="./images/logo_bb.png" alt="Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων" ></a>
+  </div>
+  <div class="-bar-block">
+    <a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> 
+    <a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a>
+    <a href="./lessons.html" onclick="_close()" class="-bar-item -button -hover-white">Σπουδές</a> 
+     <a href="./metaptixiako.html" onclick="_close()" class="-bar-item -button -hover-white">Μεταπτυχιακό</a>
+    <a href="./didaktoriko.html" onclick="_close()" class="-bar-item -button -hover-white">Διδακτορικό</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="-container -top -hide-large -red -xlarge -padding">
+  <a href="javascript:void(0)" class="-button -red -hover-red -margin-right" onclick="_open()">☰</a>
+  
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="-overlay -hide-large" onclick="_close()" style="cursor:pointer" title="close side menu" id="Overlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="-container" style="margin-top:80px" id="showcase">
+    <h1 class="-jumbo"><b>Πληροφορίες Τμήματος</b></h1>
+  <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
+    <h1 class="-xxxlarge -text-blue"><b>Πίνακας Ανακοινώσεων </b></h1>
+    <hr style="width:50px;border:5px solid purple" class="-round">
+  </div>
+  
+  <table>
+  <tr>
+    <td>07-04-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1680837057.pdf">Παράταση πρόσκλησης εκδήλωσης ενδιαφέροντος προπτυχιακών Φοιτητών/τριών για την πραγματοποίηση Πρακτικής Άσκησης</td>
+  </tr>
+  <tr>
+    <td>24-03-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1679651136.pdf">Πρόσκληση εκδήλωσης ενδιαφέροντος προπτυχιακών Φοιτητών/τριών για την πραγματοποίηση Πρακτικής Άσκησης - Ακ. Έτος 2022-2023</a></td>
+  </tr>
+  <tr>
+    <td>15-03-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1678879296.pdf">Θέση εργασίας Τηλεπικοινωνιακού Μηχανικού στην OHB Hellas</td>
+  </tr>
+  <tr>
+    <td>08-03-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1678276170.pdf">Πρόγραμμα: «Πρακτική Άσκηση Πανεπιστημίου Αιγαίου για το ακαδημαϊκό έτος 2022-2023»</td>
+  </tr>
+  <tr>
+    <td>17-02-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1674824104.pdf">Ωρολόγιο Πρόγραμμα Προπτυχιακών Σπουδών Εαρινού Εξαμήνου Ακ. Έτους 2022-23</td>
+  </tr>
+  <tr>
+    <td>15-02-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1676462101.pdf">Δελτίο Τύπου/Απονομή υποτροφιών - Πρόγραμμα «Η Σάμος στηρίζει τους φοιτητές της»</td>
+  </tr>
+  <tr>
+    <td>09-02-2023</td>
+    <td><a href="https://www.icsd.aegean.gr/webfiles/announcements/1675963486.pdf">Διαπιστωτική πράξη εκλογής εκπροσώπων των φοιτητών/φοιτητριών στη Συνέλευση του Τμήματος Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</td>
+  </tr>
+</table>
+ 
+
+
+  
+ 
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="-light-grey -container -padding-32" style="margin-top:75px;padding-right:58px"></div>
+
+<script>
+// Script to open and close sidebar
+function _open() {
+  document.getElementById("Sidebar").style.display = "block";
+  document.getElementById("Overlay").style.display = "block";
+}
+ 
+function _close() {
+  document.getElementById("Sidebar").style.display = "none";
+  document.getElementById("Overlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+<script>
+    function showContent(contentId) {
+      // Hide all content
+      var contents = document.getElementsByClassName("content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+
+      // Show selected content
+      var content = document.getElementById(contentId);
+      content.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
