@@ -39,6 +39,8 @@ body {font-size:16px;}
     <a href="./index.html" onclick="_close()" class="-bar-item -button -hover-white">Home</a> 
     <div class=box><a href="./professors.html" onclick="_close()" class="-bar-item -button -hover-white">Προσωπικό</a></div> 
     <a href="./lessons.html" onclick="_close()" class="-bar-item -button -hover-white">Σπουδές</a> 
+     <a href="./metaptixiako.html" onclick="_close()" class="-bar-item -button -hover-white">Μεταπτυχιακό</a>
+    <a href="./didaktoriko.html" onclick="_close()" class="-bar-item -button -hover-white">Διδακτορικό</a>
     
   </div>
 </nav>
@@ -57,35 +59,30 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="-container" style="margin-top:80px" id="showcase">
-    <h1 class="-jumbo"><b>Εκπαιδευτικο Προσωπικο</b></h1>
+    <h1><b>Εκπαιδευτικο Προσωπικο</b></h1>
 	<hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
-    <h1 class="-xxxlarge -text-blue"><b>Ακαδημαϊκο</b></h1>
+    <h2><b>Ακαδημαϊκο</b></h2>
     <hr style="width:50px;border:5px solid purple" class="-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="-row-padding">
     <div class="-half">
-      <img src="./images/gandalf.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Γκανδαλφ ο γκρι</h3> <p>Διδάκτορας </p> <br><p>Διδακτορικό Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών, ΕΜΠ.</p>
-<p>Δίπλωμα Ηλεκτρολόγου Μηχανικού, Τμήμα Ηλεκτρολόγων Μηχανικών & Μηχανικών Υπολογιστών, ΕΜΠ.</p>
-<p>Διατμηματικό Μεταπτυχιακό Πρόγραμμα «Τεχνο-Οικονομικά Συστήματα (ΜΒΑ)» του Πολυτεχνείου των ορυχείων της Μόρντορ.</p> <br><br> 
-<a href='gandalf.html'>περισότερες πλιροφορίες</a>">
-      <img src="./images/yoda.jpg" style="width:50%" onclick="onClick(this)" alt="<h3>Γιόντα</h3><p>Πρωην Τζεντάι Μάστερ νην Διδάκτορας </p><br><p>Μετα-διδακτορικό: 2009-2011, Υπότροφος ERCIM, CNR στην Πίζα Ιταλίας & FNR στο Λουξεμβούργο</p>
-<p>Μετα-διδακτορικό: 2008-2009, Τμήμα Ηλεκτρονικής, Πληροφορίας και Βιοτεχνολογίας, Πολυτεχνείο Μιλάνου, Ιταλία</p>
-<p>Διδακτορικό: 2008, Τμήμα Επιστήμης Υπολογιστών, Πανεπιστήμιο Κρήτης, Ελλάδα</p>
-<p>Μεταπτυχιακό: 2002, Τμήμα Επιστήμης Υπολογιστών, Πανεπιστήμιο Κορούσκο</p>
-<p>Πτυχίο: 2000, Τμήμα Επιστήμης Υπολογιστών, Ναός Τζεντάι</p>">
-      <img src="./images/bateman.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Πάτρικ Μπέιτμαν</h3> <b>Διδάκτορας </b><br><p>Δίπλωμα Ηλεκτρολόγου Μηχανικού και Μηχανικού Υπολογιστών, Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Εθνικό Μετσόβιο Πολυτεχνείο</p> 
-<p>Διδακτορικό Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Εθνικό Μετσόβιο Πολυτεχνείο 
-Certified Professional Coach & Mentor, Πανεπιστήμιο Αιγαίου 
-Educator, Berkeley Method of Entrepreneurship, UC Berkeley, US</p>">
+      <a href='gandalf.html'>
+        <img src="./images/gandalf.jpg" style="width:40%" "> 
+
+      </a>
+      
+
+      <img src="./images/yoda.jpg" style="width:50%" >
+      <img src="./images/bateman.jpg" style="width:40%"  >
     </div>
 
   </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="-button -black -xxlarge -display-topright">×</span>
+    <span class="-button -black - -display-topright">×</span>
     <div class="-modal-content -animate-zoom -center -transparent -padding-64">
       <img id="img01" class="-image">
       <p id="caption"></p>
@@ -95,36 +92,15 @@ Educator, Berkeley Method of Entrepreneurship, UC Berkeley, US</p>">
   <!-- Services -->
   <div class="-container" style="margin-top:80px" id="services">
   <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
-    <h1 class="-xxxlarge -text-blue"><b>Λοιποί Διδάσκοντες</b></h1>
+    <h2><b>Λοιποί Διδάσκοντες</b></h2>
     <hr style="width:50px;border:5px solid purple" class="-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="-row-padding">
     <div class="-half">
-      <img src="./images/qui-gon.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Κουάιν-Κγον Τζινν</h3><p>Διδάκτορας<p><br><p>Μεταδιδακτορικός Ερευνητής (Post-Doctoral Associate Researcher:
-Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
-Τμήμα Πληροφορικής & Τηλεπικοινωνιών
-Εργαστήριο Φωτονικής Τεχνολογίας & Οπτικών Επικοινωνιών.</p>
-
-<p>Μεταδιδακτορικός Ερευνητής (Marie Curie Research Fellow):
-III-V Labs - Thales - Alcatel
-Εργαστήριο GaAs - Design and Fabrication</p>
-
-<p>Διδακτορικό Δίπλωμα (Ph.D):
-Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
-Τμήμα Πληροφορικής & Τηλεπικοινωνιών</p>
-
-<p>Μεταπτυχιακο Διπλωμα Εξειδίκευσης στη Μικροηλεκτρονικη (MSc.):
-Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
-Τμήμα Πληροφορικής & Τηλεπικοινωνιών / τμήμα Φυσικής</p>
-
-<p>Πτυχιο (BS.):
-Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών
-Τμήμα Πληροφορικής & Τηλεπικοινωνιών. Τομέας: Τηλεπικοινωνιών και Επεξεργασίας Σήματος.</p>">
-      <img src="./images/gimli.jpg" style="width:50%" onclick="onClick(this)" alt="<h3>Γκίμλη ο Νάνος</h3><p>Διδάκτορας</p><br><p>Δίπλωμα, Τμήμα Ηλεκτρολόγων Μηχανικών και Τεχνολογίας Υπολογιστών, Πανεπιστήμιο Έρεμπορν (2005).</p>
-
-<p>Διδακτορικό, Τμήμα Ηλεκτρολόγων Μηχανικών και Τεχνολογίας Υπολογιστών, Πανεπιστήμιο Μίνας Τίριθ (2012).</p>">
+      <img src="./images/qui-gon.jpg" style="width:30%" >
+      <img src="./images/gimli.jpg" style="width:50%" >
       <img src="./images/sauron.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Σάουρον</h3> <p>πρώην καθηγιτής</p> <br> <p>Δεν συνεργαζόμαστε πλέον με τον κύριο Σάουρον λόγο καλλιτεχνικών διαφωνιών</p>">
     </div>
 
@@ -132,7 +108,7 @@ III-V Labs - Thales - Alcatel
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="-button -black -xxlarge -display-topright">×</span>
+    <span class="-button -black  -display-topright">×</span>
     <div class="-modal-content -animate-zoom -center -transparent -padding-64">
       <img id="img01" class="-image">
       <p id="caption"></p>
@@ -142,27 +118,22 @@ III-V Labs - Thales - Alcatel
   <!-- Designers -->
   <div class="-container" style="margin-top:80px" id="designers">
   <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
-    <h1 class="-xxxlarge -text-blue"><b>Εργαστηριακό</b></h1>
+    <h2><b>Εργαστηριακό</b></h2>
     <hr style="width:50px;border:5px solid purple" class="-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="-row-padding">
     <div class="-half">
-      <img src="./images/legolas.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Λέγολας</h3><p></p>Εργαστηριακός καθηγιτής<p><br>Δίπλωμα Μηχανικού Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πανεπιστήμιο Αιγαίου</p>
-
-<p>Μεταπτυχιακό, Προηγμένα Συστήματα Πληροφορικής, Πανεπιστήμιο Πειραιώς</p>">
-      <img src="./images/kenobi.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Όμπη-ουαν Κενόμπι</h3><p>Εργαστηριακός καθηγιτής</p><br><p>Δίπλωμα Μηχανικού Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>
-
-<p>Μεταπτυχιακό Δίπλωμα Ειδίκευσης στα Συστήματα Επεξεργασίας Σημάτων και Εικόνων, Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>
-</p>Διδακτορικό Δίπλωμα, Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής, Πανεπιστήμιο Πατρών</p>">
+      <img src="./images/legolas.jpg" style="width:40%" >
+      <img src="./images/kenobi.jpg" style="width:30%" >
       
     </div>
   </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="-button -black -xxlarge -display-topright">×</span>
+    <span class="-button -black  -display-topright">×</span>
     <div class="-modal-content -animate-zoom -center -transparent -padding-64">
       <img id="img01" class="-image">
       <p id="caption"></p>
@@ -173,26 +144,22 @@ III-V Labs - Thales - Alcatel
   <!-- Packages / Pricing Tables -->
   <div class="-container" style="margin-top:80px" id="Packages">
   <hr style="display: block; margin-top: 0.5em; margin-bottom: 0.5em;  margin-left: auto;  margin-right: auto;  border-style: inset; border-width: 1px; ">
-    <h1 class="-xxxlarge -text-blue"><b>Ερευνητικό</b></h1>
+    <h2><b>Ερευνητικό</b></h2>
     <hr style="width:50px;border:5px solid purple" class="-round">
   </div>
   
   <!-- Photo grid (modal) -->
   <div class="-row-padding">
     <div class="-half">
-      <img src="./images/bilbo.jpg" style="width:30%" onclick="onClick(this)" alt="<h3>Μπίλμπο Μπάγκινς</h3><p>Ερευνητής</p><br><p>Δίπλωμα (Integrated Master) Μηχανικού Πληροφοριακών και Επικοινωνιακών Συστημάτων, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πολυτεχνική Σχολή, Πανεπιστήμιο Αιγαίου</p>
-
-
-
-<p>Διαδίκτυο των Πραγμάτων:Ευφυή Περιβάλλοντα σε Δίκτυα Νέας Γενιάς, Πολυτεχνική Σχολή, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πανεπιστήμιο Αιγαίου</p>">
-      <img src="./images/jabba.jpg" style="width:40%" onclick="onClick(this)" alt="<h3>Τζάββα Δε Χάτ</h3><p>Ερευνητής</p><br><p>Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων, Πολυτεχνική Σχολή, Πανεπιστήμιο Αιγαίου</p><p>Διαδίκτυο των Πραγμάτων Ευφυή συστήματα σε δίκτυα νέας γενιάς  Πανεπιστήμιο Αιγαίου, Τμήμα ΜΠΕΣ, Σάμος</p>">
+      <img src="./images/bilbo.jpg" style="width:30%" >
+      <img src="./images/jabba.jpg" style="width:40%" >
       
     </div>
   </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="-modal -black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="-button -black -xxlarge -display-topright">×</span>
+    <span class="-button -black  -display-topright">×</span>
     <div class="-modal-content -animate-zoom -center -transparent -padding-64">
       <img id="img01" class="-image">
       <p id="caption"></p>
